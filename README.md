@@ -1,5 +1,5 @@
 
-The pre-request is node and npm should be installed the specific machine.
+The pre-request are node and npm. It should be installed the specific machine.
 
 Please install ncecessary libaries, using npm install command.
     Run above command in Package.json file folder path please.
