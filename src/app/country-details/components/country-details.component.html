@@ -1,0 +1,22 @@
+<section fxLayout="row wrap" fxLayoutAlign="center center">
+  <mat-card fxFlex="500px" fxFlex.xs="100%">
+    <mat-card-title>Country Details</mat-card-title>
+
+    <form [formGroup]="countryDetailForm" (ngSubmit)="listCounties()">
+
+      <shared-region [formCtrl]="countryDetailForm.get('region')" (regionChanged)='regionModified($event)'>
+      </shared-region>
+
+      <mat-card-actions>
+        <button mat-raised-button color="primary" [disabled]="!isEnabledSubmitButton">Load countires</button>
+      </mat-card-actions>
+
+      <shared-country-list [formCtrl]="countryDetailForm.get('country')" [countries]="countries"
+        [hideCountryList]="hideCountryList" (countryChanged)='onCountryChanged($event)'></shared-country-list>
+
+      <shared-country-detail [data]='selectedCountryDetails' [hideTable]="hideSelectedCountryTable">
+      </shared-country-detail>
+
+    </form>
+  </mat-card>
+</section>
