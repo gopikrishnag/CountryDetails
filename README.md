@@ -25,6 +25,7 @@ According to the code exercise,
       b. country-list.component.ts --> this kind of reusable drop down - need to enhance the naming convention. 
       
       c. country-detail.component.ts  --> reusable country table which can be used in other places 
+      
                         I. Numeric pipe used for population number format
                         
                         II. Flag - displayed as an image
